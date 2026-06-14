@@ -3,7 +3,6 @@
 Hi👋 Here are some beamer templates which are secondary creations of [SINTEF Presentation](https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx) template. Thanks [Federico Zenith](federico.zenith@sintef.no) for creating such well-designed works. To use it in my and my friends' schools/institutes, I rewrote and added some icons and features to adapt to specific surroundings✨.
 
 ## Colleges & institutes
-
 - The Hong Kong Polytechnic University (香港理工大学)
 ![PolyU](/gallery/PolyU.png?raw=true)
 - Southwest University (西南大学)
@@ -57,6 +56,9 @@ Hi👋 Here are some beamer templates which are secondary creations of [SINTEF P
 - CityUHK (香港城市大学)
   ![CityUHK](/gallery/CityUHK.png?raw=true)
   > Thanks to [Li Yanru](https://github.com/UrnayIl) for contributing this template!
+- Beijing University of Technology (北京工业大学)
+  ![BJUT](/gallery/BJUT.png?raw=true)
+  > Thanks to [Le Liu](https://github.com/mrle0429) for contributing this template!
 
 Some of these templates have been submitted to [Overleaf](https://cs.overleaf.com/gallery), please check them here👇
 
