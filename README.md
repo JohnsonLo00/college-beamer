@@ -68,9 +68,12 @@ Hi👋 Here are some beamer templates which are secondary creations of [SINTEF P
 - SCNU (华南师范大学)
   ![SCNU](/gallery/SCNU.png?raw=true)
   > Thanks to [yaogg](https://github.com/mtdww) for contributing this template!
-- Beijing University of Technology (北京工业大学)
+- BJUT (北京工业大学)
   ![BJUT](/gallery/BJUT.png?raw=true)
   > Thanks to [Le Liu](https://github.com/mrle0429) for contributing this template!
+- ZUEL (中南财经政法大学)
+  ![ZURL](/gallery/ZURL.png?raw=true)
+  > Thanks to [yinshisama](https://github.com/yinshisama) for contributing this template!
 
 Some of these templates have been submitted to [Overleaf](https://cs.overleaf.com/gallery), please check them here👇
 
