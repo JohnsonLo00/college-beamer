@@ -60,6 +60,9 @@ Hi👋 Here are some beamer templates which are secondary creations of [SINTEF P
 - NJAU (南京农业大学)
   ![NJAU](/gallery/NJAU.png?raw=true)
   > Thanks to [PrimeX-06](https://github.com/PrimeX-06) for contributing this template!
+- HUST (华中科技大学)
+  ![HUST](/gallery/HUST.png?raw=true)
+  > Thanks to [Lucas](https://github.com/Lucas04-nhr) for contributing this template!
 
 Some of these templates have been submitted to [Overleaf](https://cs.overleaf.com/gallery), please check them here👇
 
