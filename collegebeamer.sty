@@ -210,7 +210,13 @@
   \renewcommand{\colorlogoPath}{src/HUST/color-logo.pdf}  % path to the logo image with background color
   \renewcommand{\translogoPath}{src/HUST/trans-logo.pdf}  % path to the logo image with transparent background
   \renewcommand{\backgroundPath}{src/HUST/background.pdf}  % path to the background image
-  % \renewcommand{\backgroundPath}{src/HUST/background-tongji.pdf}  % path to the background image (for Tongji)
+}
+
+\DeclareOption{whu}{
+    \renewcommand{\maincolorRGB}{17, 87, 64}
+    \renewcommand{\colorlogoPath}{src/WHU/color-logo.png}
+    \renewcommand{\translogoPath}{src/WHU/trans-logo.png}
+    \renewcommand{\backgroundPath}{src/WHU/background.png}
 }
 
 \ProcessOptions\relax
@@ -280,7 +286,7 @@
 \setbeamertemplate{footline}{
     \begin{beamercolorbox}[wd=\textwidth, ht=5mm, dp=5mm, rightskip=1cm]{footline}
         \usebeamerfont{footline}
-        \@footlinepayoff \hfill \insertframenumber/\inserttotalframenumber 
+        \@footlinepayoff \hfill \insertframenumber/\inserttotalframenumber
     \end{beamercolorbox}
 }
 
@@ -420,13 +426,13 @@
 
 \renewcommand{\maketitle}{
     \begingroup
-    \setbeamertemplate{footline}{}
-    \setbeamertemplate{background}{
-        \includegraphics[height=\paperheight]{\backgroundPath}
-    }
-    \begin{frame}
-        \titlepage
-    \end{frame}
+        \setbeamertemplate{footline}{}
+        \setbeamertemplate{background}{
+            \includegraphics[height=\paperheight]{\backgroundPath}
+        }
+        \begin{frame}
+            \titlepage
+        \end{frame}
     \endgroup
 }
 
