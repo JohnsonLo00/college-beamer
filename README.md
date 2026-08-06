@@ -57,6 +57,9 @@ Hi👋 Here are some beamer templates which are secondary creations of [SINTEF P
 - CityUHK (香港城市大学)
   ![CityUHK](/gallery/CityUHK.png?raw=true)
   > Thanks to [Li Yanru](https://github.com/UrnayIl) for contributing this template!
+- NJAU (南京农业大学)
+  ![NJAU](/gallery/NJAU.png?raw=true)
+  > Thanks to [PrimeX-06](https://github.com/PrimeX-06) for contributing this template!
 
 Some of these templates have been submitted to [Overleaf](https://cs.overleaf.com/gallery), please check them here👇
 
