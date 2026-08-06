@@ -63,6 +63,9 @@ Hi👋 Here are some beamer templates which are secondary creations of [SINTEF P
 - HUST (华中科技大学)
   ![HUST](/gallery/HUST.png?raw=true)
   > Thanks to [Lucas](https://github.com/Lucas04-nhr) for contributing this template!
+- WHU (武汉大学)
+  ![WHU](/gallery/WHU.png?raw=true)
+  > Thanks to [M1Z2L3](https://github.com/TavinWang) for contributing this template!
 
 Some of these templates have been submitted to [Overleaf](https://cs.overleaf.com/gallery), please check them here👇
 
