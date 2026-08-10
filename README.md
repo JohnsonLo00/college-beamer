@@ -170,6 +170,32 @@ Noted that the theme's main color will be used in the front-ground of titles and
 
 Now you have your brand new template 👏🎉
 
+## Known issues
+
+### Presenter notes with XeLaTeX
+
+When compiling with XeLaTeX and enabling Beamer's presenter-note mode,
+
+```latex
+\setbeameroption{show notes on second screen}
+```
+
+the text color on some slides may become incorrect (for example, normal text may unexpectedly appear white).
+
+This is an upstream Beamer issue rather than a bug in `college-beamer`; see [beamer#337](https://github.com/josephwright/beamer/issues/337). The issue and workaround were reported and investigated in [college-beamer#45](https://github.com/liu-qilong/college-beamer/issues/45).
+
+A workaround is to reset the foreground color at the beginning of each frame's notes:
+
+```latex
+\makeatletter
+\pretocmd{\beamer@framenotesbegin}
+  {\usebeamercolor[fg]{normal text}}
+  {}{}
+\makeatother
+```
+
+`college-beamer` already loads `etoolbox`, so no additional package is required for `\pretocmd`.
+
 ## Issues & suggestions
 
 If you have any revision suggestions, please create an issue in this repository. Thanks indeed🤝
