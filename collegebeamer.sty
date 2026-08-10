@@ -33,13 +33,34 @@
 
         % os specific font setting
         \ifwindows
-            \setCJKmainfont{SimSun}
+            \IfFontExistsTF{KaiTi}{
+                \setCJKmainfont[
+                    AutoFakeBold = true,
+                    ItalicFont = KaiTi
+                ]{SimSun}
+            }{
+                \setCJKmainfont[
+                    AutoFakeBold = true,
+                    ItalicFont = FandolKai-Regular,
+                    ItalicFeatures = {Extension = .otf}
+                ]{SimSun}
+            }
         \fi
+
         \ifmacosx
-            \setCJKmainfont{Songti SC}
+            \setCJKmainfont[
+                BoldFont = Songti SC Bold,
+                ItalicFont = Kaiti SC,
+                BoldItalicFont = Kaiti SC Bold
+            ]{Songti SC}
         \fi
+
         \iflinux
-            \setCJKmainfont{Noto Serif CJK SC}
+            \setCJKmainfont[
+                BoldFont = Noto Serif CJK SC Bold,
+                ItalicFont = FandolKai-Regular,
+                ItalicFeatures = {Extension = .otf}
+            ]{Noto Serif CJK SC}
         \fi
 
         \renewcommand{\tocStr}{目录}

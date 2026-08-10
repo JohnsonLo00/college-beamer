@@ -88,6 +88,12 @@ _P.S. Sadly, Overleaf no longer accepts institute-related templates from non-off
 
 ## Options & usage
 
+Compile with `latexmk`:
+
+```bash
+latexmk -xelatex -interaction=nonstopmode pre.tex
+```
+
 ### Switch college/institute
 
 Switching between different college/institute is quite easy, just add college/institute name (all lower case) to the `collegeBeamer` package. For example, to switch to the PolyU theme, add `polyu` to the package:
@@ -95,14 +101,6 @@ Switching between different college/institute is quite easy, just add college/in
 ```
 \usepackage[polyu,en]{collegeBeamer}
 ```
-
-### Language Selection
-
-To change the language of the slides, simply set the option to en (English) or zh (Chinese).
-All necessary configurations are already handled in the .sty file.
-
-Note:
-If you select zh (Chinese), please use the XeLaTeX compiler for proper font support.
 
 ### Switch language
 
@@ -117,6 +115,12 @@ or
 ```
 \usepackage[heu,zh]{collegeBeamer} % For Chinese (requires XeLaTeX)
 ```
+
+> [!tip]
+> If you select `zh` (Chinese), please use the XeLaTeX compiler for proper font support:
+> ```bash
+> latexmk -xelatex -interaction=nonstopmode pre.tex
+> ```
 
 ### Page elements
 
