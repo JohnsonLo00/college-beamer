@@ -110,8 +110,8 @@ src/MyCollege/
 └── background.png
 ```
 
-- `color-logo` is displayed on white slides.
-- `trans-logo` is displayed on colored slides and should normally have a transparent background.
+- `color-logo` is displayed on white slides; a 906 x 1134 (width x height) size image is recommended.
+- `trans-logo` is displayed on colored slides and should normally have a transparent background; a 906 x 1134 (width x height) size image is recommended.
 - `background` fills the title slide; a 16:9 image is recommended.
 
 PNG and PDF assets are both supported. Their extensions and capitalization must match the paths declared in `collegebeamer.sty`. If a transparent logo is unsuitable for your branding, see [issue #8](https://github.com/liu-qilong/college-beamer/issues/8) for guidance on using a white-backed logo.
