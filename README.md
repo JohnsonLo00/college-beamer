@@ -72,7 +72,7 @@ Hi👋 Here are some beamer templates which are secondary creations of [SINTEF P
   ![BJUT](/gallery/BJUT.png?raw=true)
   > Thanks to [Le Liu](https://github.com/mrle0429) for contributing this template!
 - ZUEL (中南财经政法大学)
-  ![ZURL](/gallery/ZURL.png?raw=true)
+  ![ZURL](/gallery/ZUEL.png?raw=true)
   > Thanks to [yinshisama](https://github.com/yinshisama) for contributing this template!
 
 Some of these templates have been submitted to [Overleaf](https://cs.overleaf.com/gallery), please check them here👇
