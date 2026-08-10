@@ -1,4 +1,4 @@
-\ProvidesPackage{collegeBeamer}
+\ProvidesPackage{collegebeamer}
 
 % required packages
 \RequirePackage{etoolbox}
@@ -67,7 +67,7 @@
         \renewcommand{\qaStr}{\textbf{感谢您的聆听和反馈}}
         \ifxetex
         \else
-            \PackageError{collegeBeamer}{请使用 XeLaTeX 编译此模板！}{}
+            \PackageError{collegebeamer}{请使用 XeLaTeX 编译此模板！}{}
         \fi
     }
 }
@@ -141,12 +141,19 @@
     \renewcommand{\translogoPath}{src/NWPU/trans-logo.png}
     \renewcommand{\backgroundPath}{src/NWPU/background.png}
 }
-
-\DeclareOption{CQU}{
+\DeclareOption{cqu}{
     \renewcommand{\maincolorRGB}{2, 82, 159}  % the theme's main color in RGB
     \renewcommand{\colorlogoPath}{src/CQU/color-logo.png}  % path to the logo image with background color
     \renewcommand{\translogoPath}{src/CQU/trans-logo.png}  % path to the logo image with transparent background
     \renewcommand{\backgroundPath}{src/CQU/background.png}  % path to the background image
+}
+
+% Backward-compatible alias for the original uppercase option.
+\DeclareOption{CQU}{
+    \renewcommand{\maincolorRGB}{2, 82, 159}
+    \renewcommand{\colorlogoPath}{src/CQU/color-logo.png}
+    \renewcommand{\translogoPath}{src/CQU/trans-logo.png}
+    \renewcommand{\backgroundPath}{src/CQU/background.png}
 }
 
 \DeclareOption{dgut}{
@@ -278,8 +285,6 @@
 \definecolor{maincolor}{RGB}{\maincolorRGB}
 \definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
 \definecolor{morelightgray}{rgb}{0.9, 0.9, 0.9}
-\definecolor{darkred}{RGB}{139,0,0}
-\definecolor{darkblue}{RGB}{0,51,102}
 
 \newcommand{\themecolor}[1]{
     \ifstrequal{#1}{colorbg}{
@@ -346,22 +351,10 @@
 
 % block
 \setbeamertemplate{blocks}[rounded]
-\setbeamerfont{block title}{size=\small}
+\setbeamerfont{block title}{series=\centering, size=\small}
 \setbeamerfont{block body}{size=\scriptsize}
-\setbeamercolor{block title}{fg=white, bg=maincolor}
+\setbeamercolor{block title}{fg=airforceblue, bg=morelightgray}
 \setbeamercolor{block body}{fg=darkgray, bg=morelightgray}
-
-% alerted block
-\setbeamerfont{block title alerted}{size=\small, series=\bfseries}
-\setbeamerfont{block body alerted}{size=\scriptsize}
-\setbeamercolor{block title alerted}{fg=white, bg=darkred}
-\setbeamercolor{block body alerted}{fg=black, bg=darkred!10}
-
-% example block
-\setbeamerfont{block title example}{size=\small}
-\setbeamerfont{block body example}{size=\scriptsize}
-\setbeamercolor{block title example}{fg=white, bg=darkblue}
-\setbeamercolor{block body example}{fg=black, bg=darkblue!10}
 
 % bullets
 \setbeamertemplate{itemize item}{\textbullet}
@@ -540,4 +533,3 @@
 % coloured texttt
 \newcommand{\ctexttt}[1]{\texttt{\textcolor{maincolor}{#1}}}
 \newcommand{\btexttt}[1]{\texttt{\textcolor{airforceblue}{#1}}}
-
